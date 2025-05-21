@@ -1,3 +1,4 @@
+#Create a dictionary of words
 word_values = {
     "orem": 3,
     "oracle": 5,
@@ -6,6 +7,7 @@ word_values = {
     "bore":2,
 }
 
+#Check if string starts with the substring
 def count(substring):
     total = 0
     for word, value in word_values.items():
@@ -13,13 +15,13 @@ def count(substring):
             total += value
     return total
 
+#Add a word to the dictionary
 def add_word(word, value):
     word_values[word] = value
     print(f"Added the word " + word)
 
 
-
-
+#Test Print Statements
 print(count("or"))
 print(count("org"))
 add_word("organ", 5)
